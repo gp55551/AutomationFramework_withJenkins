@@ -15,7 +15,7 @@ public class SearchProductTest extends BaseTest {
     @Severity(CRITICAL)
     @Description("Search Product and Verify the first link")
     @Story("As a user I should be able to Search Product and Verify the first link")
-    public void verifyHomePage() {
+    public void searchProductAndVerifyFirstLink() {
         HomePage homePage = new HomePage(getDriver());
         homePage.searchProduct("iPhone 15");
         homePage.verifyFirstLink("iPhone 15");
