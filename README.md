@@ -17,4 +17,4 @@ This is a demo project for Selenium Page Object Model with Allure reporting.
 
 ### Report -
 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/f9d4a687-45f7-4188-a937-b4c4d1c9efe9" />
+<img width="1908" height="894" alt="image" src="https://github.com/user-attachments/assets/b8fc8206-bd5a-49a6-9f7a-ea020a6ebfb0" />
