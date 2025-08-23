@@ -9,7 +9,7 @@ import page.HomePage;
 import static io.qameta.allure.SeverityLevel.NORMAL;
 import static util.driver.DriverHolder.getDriver;
 
-public class MxPlayerTest extends BaseTest {
+public class MxPlayerHomepageTest extends BaseTest {
 
     @Test(description = "Verify the homepage of the application")
     @Severity(NORMAL)
