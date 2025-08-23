@@ -12,6 +12,9 @@ public class HomePage extends BasePage {
     private final By searchButton = By.id("nav-search-submit-button");
 
     private final By firstSearchResultName = By.xpath("(//*[text()='Results']/following::a/h2/span)[1]");
+    private final By mxPlayerLink = By.xpath("//a[text()='MX Player']");
+    private final By mxPlayerHeader = By.xpath("//h1[text()='Amazon miniTV']");
+
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -38,5 +41,26 @@ public class HomePage extends BasePage {
     {
         waitUntilElementVisible(firstSearchResultName);
         Assert.assertTrue(driver.findElement(firstSearchResultName).getText().contains(product));
+    }
+
+    @Step("verify MX Player link ")
+    public void verifyMXPlayerLink()
+    {
+        waitUntilElementVisible(mxPlayerLink);
+        Assert.assertTrue(driver.findElement(mxPlayerLink).isDisplayed());
+    }
+
+    @Step("click MX Player link ")
+    public void clickMXPlayerLink()
+    {
+        waitUntilElementVisible(mxPlayerLink);
+        driver.findElement(mxPlayerLink).click();
+    }
+
+    @Step("verify MX Player Homepage")
+    public void verifyMXPlayerHomepage()
+    {
+        waitUntilElementVisible(mxPlayerHeader);
+        driver.findElement(mxPlayerHeader).click();
     }
 }

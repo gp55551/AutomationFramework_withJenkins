@@ -20,7 +20,6 @@ public class DriverFactory {
             case "edge":
                 return new EdgeDriver();
             default:
-
                 return new ChromeDriver();
         }
     }
