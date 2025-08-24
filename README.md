@@ -13,7 +13,7 @@ This is a demo project for Selenium Page Object Model with ChainTest reporting.
 2. Open the project in Intellij IDEA
 3. Run TestNG.XML
 4. Open the terminal in Intellij IDEA
-5. Find results in target/chainTest/Index.html
+5. Find results in target/chaintest/Index.html
 
 ### Report -
 
