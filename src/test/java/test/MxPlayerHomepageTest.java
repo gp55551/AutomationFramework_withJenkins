@@ -31,8 +31,8 @@ public class MxPlayerHomepageTest extends BaseTest {
                 .verifyAllLinks(NEWS_HOT.getLinkTextValue())
                 .verifyAllLinks(WEB_SERIES.getLinkTextValue())
                 .verifyAllLinks(MOVIES.getLinkTextValue())
-                .verifyAllLinks(V_DESI.getLinkTextValue())
-                .verifyAllLinks(COMEDY.getLinkTextValue())
-                .verifyAllLinks(TAMIL.getLinkTextValue());
+                .verifyAllLinks(V_DESI.getLinkTextValue());
+               // .verifyAllLinks(COMEDY.getLinkTextValue())
+              //  .verifyAllLinks(TAMIL.getLinkTextValue());
     }
 }

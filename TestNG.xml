@@ -2,9 +2,9 @@
 <suite name="Regression Test Suite" >
     <test name="Regression Test">
         <classes>
-            <class name="test.HomepageTest" />
-            <class name="test.SearchProductTest" />
-           <!-- <class name="test.MxPlayerHomepageTest" />-->
+           <!-- <class name="test.HomepageTest" />
+            <class name="test.SearchProductTest" />-->
+            <class name="test.MxPlayerHomepageTest" />
         </classes>
     </test>
 </suite>

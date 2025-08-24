@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-24T15:09:40 IST" name="Regression Test Suite" finished-at="2025-08-24T15:10:19 IST" duration-ms="38492">
+  <suite started-at="2025-08-24T15:17:14 IST" name="Regression Test Suite" finished-at="2025-08-24T15:17:35 IST" duration-ms="20601">
     <groups>
     </groups>
-    <test started-at="2025-08-24T15:09:40 IST" name="Regression Test" finished-at="2025-08-24T15:10:19 IST" duration-ms="38492">
+    <test started-at="2025-08-24T15:17:14 IST" name="Regression Test" finished-at="2025-08-24T15:17:35 IST" duration-ms="20601">
       <class name="test.MxPlayerHomepageTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@2362f559]" started-at="2025-08-24T15:09:56 IST" name="before" finished-at="2025-08-24T15:10:03 IST" duration-ms="6566" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@139982de]" started-at="2025-08-24T15:17:14 IST" name="before" finished-at="2025-08-24T15:17:21 IST" duration-ms="6636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="verifyMXPlayerHomepage()[pri:1, instance:test.MxPlayerHomepageTest@2362f559]" started-at="2025-08-24T15:10:03 IST" name="verifyMXPlayerHomepage" finished-at="2025-08-24T15:10:07 IST" duration-ms="4650" status="PASS">
+        <test-method signature="verifyMXPlayerHomepage()[pri:1, instance:test.MxPlayerHomepageTest@139982de]" started-at="2025-08-24T15:17:21 IST" name="verifyMXPlayerHomepage" finished-at="2025-08-24T15:17:24 IST" duration-ms="3319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMXPlayerHomepage -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@2362f559]" started-at="2025-08-24T15:10:07 IST" name="after" finished-at="2025-08-24T15:10:08 IST" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@139982de]" started-at="2025-08-24T15:17:24 IST" name="after" finished-at="2025-08-24T15:17:25 IST" duration-ms="341" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMXPlayerHomepage status=SUCCESS method=MxPlayerHomepageTest.verifyMXPlayerHomepage()[pri:1, instance:test.MxPlayerHomepageTest@2362f559] output={null}]]]>
+                <![CDATA[[TestResult name=verifyMXPlayerHomepage status=SUCCESS method=MxPlayerHomepageTest.verifyMXPlayerHomepage()[pri:1, instance:test.MxPlayerHomepageTest@139982de] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@2362f559]" started-at="2025-08-24T15:10:08 IST" name="before" finished-at="2025-08-24T15:10:14 IST" duration-ms="6840" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@139982de]" started-at="2025-08-24T15:17:25 IST" name="before" finished-at="2025-08-24T15:17:31 IST" duration-ms="6145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="verifyLinks()[pri:2, instance:test.MxPlayerHomepageTest@2362f559]" started-at="2025-08-24T15:10:14 IST" name="verifyLinks" finished-at="2025-08-24T15:10:18 IST" duration-ms="3504" status="FAIL">
+        <test-method signature="verifyLinks()[pri:2, instance:test.MxPlayerHomepageTest@139982de]" started-at="2025-08-24T15:17:31 IST" name="verifyLinks" finished-at="2025-08-24T15:17:34 IST" duration-ms="3474" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -42,7 +42,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertTrue(Assert.java:56)
 at org.testng.Assert.assertTrue(Assert.java:66)
 at page.MXPlayerPage.verifyAllLinks(MXPlayerPage.java:22)
-at test.MxPlayerHomepageTest.verifyLinks(MxPlayerHomepageTest.java:35)
+at test.MxPlayerHomepageTest.verifyLinks(MxPlayerHomepageTest.java:36)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -78,11 +78,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinks -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@2362f559]" started-at="2025-08-24T15:10:18 IST" name="after" finished-at="2025-08-24T15:10:19 IST" duration-ms="704" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@139982de]" started-at="2025-08-24T15:17:34 IST" name="after" finished-at="2025-08-24T15:17:35 IST" duration-ms="641" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLinks status=FAILURE method=MxPlayerHomepageTest.verifyLinks()[pri:2, instance:test.MxPlayerHomepageTest@2362f559] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLinks status=FAILURE method=MxPlayerHomepageTest.verifyLinks()[pri:2, instance:test.MxPlayerHomepageTest@139982de] output={null}]]]>
               </value>
             </param>
           </params>
@@ -90,48 +90,6 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- test.MxPlayerHomepageTest -->
-      <class name="test.SearchProductTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.SearchProductTest@8297b3a]" started-at="2025-08-24T15:09:47 IST" name="before" finished-at="2025-08-24T15:09:54 IST" duration-ms="6507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method signature="searchProductAndVerifyFirstLink()[pri:0, instance:test.SearchProductTest@8297b3a]" started-at="2025-08-24T15:09:54 IST" name="searchProductAndVerifyFirstLink" finished-at="2025-08-24T15:09:56 IST" duration-ms="1892" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchProductAndVerifyFirstLink -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.SearchProductTest@8297b3a]" started-at="2025-08-24T15:09:56 IST" name="after" finished-at="2025-08-24T15:09:56 IST" duration-ms="228" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchProductAndVerifyFirstLink status=SUCCESS method=SearchProductTest.searchProductAndVerifyFirstLink()[pri:0, instance:test.SearchProductTest@8297b3a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- test.SearchProductTest -->
-      <class name="test.HomepageTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.HomepageTest@229f66ed]" started-at="2025-08-24T15:09:40 IST" name="before" finished-at="2025-08-24T15:09:47 IST" duration-ms="6969" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method signature="verifyHomePage()[pri:0, instance:test.HomepageTest@229f66ed]" started-at="2025-08-24T15:09:47 IST" name="verifyHomePage" finished-at="2025-08-24T15:09:47 IST" duration-ms="78" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePage -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.HomepageTest@229f66ed]" started-at="2025-08-24T15:09:47 IST" name="after" finished-at="2025-08-24T15:09:47 IST" duration-ms="237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHomePage status=SUCCESS method=HomepageTest.verifyHomePage()[pri:0, instance:test.HomepageTest@229f66ed] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- test.HomepageTest -->
     </test> <!-- Regression Test -->
   </suite> <!-- Regression Test Suite -->
 </testng-results>
