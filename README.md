@@ -1,4 +1,4 @@
-# Selenium TestNG Project with Allure Reporting
+# Selenium TestNG Project with ChainTest Reporting
 
 This is a demo project for Selenium Page Object Model with ChainTest reporting.
 
