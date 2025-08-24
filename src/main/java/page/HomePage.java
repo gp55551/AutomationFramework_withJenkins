@@ -1,6 +1,5 @@
 package page;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -20,14 +19,12 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    @Step("verify Home Page")
     public void verifyHomePage()
     {
         waitUntilElementVisible(logo);
         Assert.assertTrue(driver.findElement(logo).isDisplayed());
     }
 
-    @Step("search Product")
     public void searchProduct(String product)
     {
         waitUntilElementVisible(searchBox);
@@ -36,28 +33,24 @@ public class HomePage extends BasePage {
         driver.findElement(searchButton).click();
     }
 
-    @Step("verify First Link")
     public void verifyFirstLink(String product)
     {
         waitUntilElementVisible(firstSearchResultName);
         Assert.assertTrue(driver.findElement(firstSearchResultName).getText().contains(product));
     }
 
-    @Step("verify MX Player link ")
     public void verifyMXPlayerLink()
     {
         waitUntilElementVisible(mxPlayerLink);
         Assert.assertTrue(driver.findElement(mxPlayerLink).isDisplayed());
     }
 
-    @Step("click MX Player link ")
     public void clickMXPlayerLink()
     {
         waitUntilElementVisible(mxPlayerLink);
         driver.findElement(mxPlayerLink).click();
     }
 
-    @Step("verify MX Player Homepage")
     public void verifyMXPlayerHomepage()
     {
         waitUntilElementVisible(mxPlayerHeader);
