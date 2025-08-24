@@ -12,9 +12,36 @@ public class MXPlayerPage extends BasePage {
         super(driver);
     }
 
-    public void verifyMXPlayerHomepage()
-    {
+    public MXPlayerPage verifyMXPlayerHomepage() {
         waitUntilElementVisible(mxPlayerHeader);
         Assert.assertTrue(driver.findElement(mxPlayerHeader).isDisplayed());
+        return this;
+    }
+
+    public MXPlayerPage verifyAllLinks(String linkText) {
+        Assert.assertTrue(driver.findElement(By.xpath("//*[text()='"+linkText+"']")).isDisplayed());
+        return this;
+    }
+
+    public enum Link {
+
+        HOME("Home"),
+        NEWS_HOT("New & Hot"),
+        WEB_SERIES("Web Series"),
+        MOVIES("Movies"),
+        V_DESI("VDesi"),
+        ROMANCE("Romance"),
+        COMEDY("Comedy"),
+        TAMIL("Tamil");
+
+        private final String linkText;
+
+        Link(String linkText) {
+            this.linkText = linkText;
+        }
+
+        public String getLinkTextValue() {
+            return linkText;
+        }
     }
 }

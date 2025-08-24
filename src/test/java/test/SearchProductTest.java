@@ -12,7 +12,7 @@ public class SearchProductTest extends BaseTest {
     public void searchProductAndVerifyFirstLink() {
         ChainTestListener.log("search Product And Verify First Link");
         HomePage homePage = new HomePage(getDriver());
-        homePage.searchProduct("iPhone 15");
-        homePage.verifyFirstLink("iPhone 15");
+        homePage.searchProduct("iPhone 15")
+                .verifyFirstLink("iPhone 15");
     }
 }

@@ -17,35 +17,40 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    public void verifyHomePage()
+    public HomePage verifyHomePage()
     {
         waitUntilElementVisible(logo);
         Assert.assertTrue(driver.findElement(logo).isDisplayed());
+        return this;
     }
 
-    public void searchProduct(String product)
+    public HomePage searchProduct(String product)
     {
         waitUntilElementVisible(searchBox);
         driver.findElement(searchBox).sendKeys(product);
         waitUntilElementVisible(searchButton);
         driver.findElement(searchButton).click();
+        return this;
     }
 
-    public void verifyFirstLink(String product)
+    public HomePage verifyFirstLink(String product)
     {
         waitUntilElementVisible(firstSearchResultName);
         Assert.assertTrue(driver.findElement(firstSearchResultName).getText().contains(product));
+        return this;
     }
 
-    public void verifyMXPlayerLink()
+    public HomePage verifyMXPlayerLink()
     {
         waitUntilElementVisible(mxPlayerLink);
         Assert.assertTrue(driver.findElement(mxPlayerLink).isDisplayed());
+        return this;
     }
 
-    public void clickMXPlayerLink()
+    public MXPlayerPage clickMXPlayerLink()
     {
         waitUntilElementVisible(mxPlayerLink);
         driver.findElement(mxPlayerLink).click();
+        return new MXPlayerPage(driver);
     }
 }

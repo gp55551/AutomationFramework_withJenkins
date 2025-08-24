@@ -3,5 +3,6 @@ util\driver\DriverFactory.class
 page\HomePage.class
 page\BasePage.class
 util\PropertyFileReader.class
+page\MXPlayerPage$Link.class
 util\CommonMethods.class
 util\driver\DriverHolder.class

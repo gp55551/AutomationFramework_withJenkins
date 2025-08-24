@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="20.506" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="32.107" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -66,7 +66,8 @@
     <property name="library.jansi.path" value="C:\apache-maven-3.9.11\lib\jansi-native"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyHomePage" classname="test.HomepageTest" time="0.238"/>
-  <testcase name="searchProductAndVerifyFirstLink" classname="test.SearchProductTest" time="1.798"/>
-  <testcase name="verifyMXPlayerHomepage" classname="test.MxPlayerHomepageTest" time="3.556"/>
+  <testcase name="verifyHomePage" classname="test.HomepageTest" time="0.212"/>
+  <testcase name="searchProductAndVerifyFirstLink" classname="test.SearchProductTest" time="4.763"/>
+  <testcase name="verifyMXPlayerHomepage" classname="test.MxPlayerHomepageTest" time="6.076"/>
+  <testcase name="verifyLinks" classname="test.MxPlayerHomepageTest" time="5.464"/>
 </testsuite>
