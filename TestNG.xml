@@ -4,9 +4,7 @@
         <classes>
             <class name="test.HomepageTest" />
             <class name="test.SearchProductTest" />
-<!--
             <class name="test.MxPlayerHomepageTest" />
--->
         </classes>
     </test>
 </suite>
