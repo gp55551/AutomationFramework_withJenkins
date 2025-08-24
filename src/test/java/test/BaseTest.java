@@ -28,15 +28,15 @@ public class BaseTest {
 
     @AfterMethod
     public void after(ITestResult result) {
-        if (getDriver() != null) {
-            getDriver().quit();
-        }
         ChainTestListener.log("Ending Test.....");
         if (!result.isSuccess()) {
             TakesScreenshot scr = (TakesScreenshot) getDriver();
             byte imgScr[] = scr.getScreenshotAs(OutputType.BYTES);
             // embed
             ChainTestListener.embed(imgScr, "image/png");
+        }
+        if (getDriver() != null) {
+            getDriver().quit();
         }
     }
 }
