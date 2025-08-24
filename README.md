@@ -17,3 +17,4 @@ This is a demo project for Selenium Page Object Model with ChainTest reporting.
 
 ### Report -
 
+![img.png](img.png)

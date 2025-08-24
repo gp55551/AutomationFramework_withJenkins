@@ -1,5 +1,8 @@
 package test;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -17,13 +20,21 @@ public class BaseTest {
     public void before() {
         setDriver(DriverFactory.getNewDriverInstance(getProperty("browser")));
         getDriver().manage().window().maximize();
+        ChainTestListener.log("Start testing....");
         getDriver().get(getProperty("application_url"));
     }
 
     @AfterMethod
-    public void after() {
+    public void after(ITestResult result) {
         if (getDriver() != null) {
             getDriver().quit();
+        }
+        ChainTestListener.log("Ending Test.....");
+        if (!result.isSuccess()) {
+            TakesScreenshot scr = (TakesScreenshot) getDriver();
+            byte imgScr[] = scr.getScreenshotAs(OutputType.BYTES);
+            // embed
+            ChainTestListener.embed(imgScr, "image/png");
         }
     }
 }

@@ -12,8 +12,6 @@ public class HomePage extends BasePage {
 
     private final By firstSearchResultName = By.xpath("(//*[text()='Results']/following::a/h2/span)[1]");
     private final By mxPlayerLink = By.xpath("//a[text()='MX Player']");
-    private final By mxPlayerHeader = By.xpath("(//a[@href='/minitv'])[1]");
-
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -49,11 +47,5 @@ public class HomePage extends BasePage {
     {
         waitUntilElementVisible(mxPlayerLink);
         driver.findElement(mxPlayerLink).click();
-    }
-
-    public void verifyMXPlayerHomepage()
-    {
-        waitUntilElementVisible(mxPlayerHeader);
-        Assert.assertTrue(driver.findElement(mxPlayerHeader).isDisplayed());
     }
 }

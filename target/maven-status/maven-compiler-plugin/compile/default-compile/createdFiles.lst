@@ -1,6 +1,7 @@
+page\MXPlayerPage.class
 util\driver\DriverFactory.class
+page\HomePage.class
+page\BasePage.class
 util\PropertyFileReader.class
 util\CommonMethods.class
-page\HomePage.class
 util\driver\DriverHolder.class
-page\BasePage.class
