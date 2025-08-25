@@ -11,6 +11,9 @@ public class HomePage extends BasePage {
     private final By searchButton = By.id("nav-search-submit-button");
     private final By firstSearchResultName = By.xpath("(//*[text()='Results']/following::a/h2/span)[1]");
     private final By mxPlayerLink = By.xpath("//a[text()='MX Player']");
+    private final By helloSignInLink = By.xpath("//*[text()='Hello, sign in']");
+
+
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -51,5 +54,12 @@ public class HomePage extends BasePage {
         waitUntilElementVisible(mxPlayerLink);
         driver.findElement(mxPlayerLink).click();
         return new MXPlayerPage(driver);
+    }
+
+    public SignInPage clickSignInLink()
+    {
+        waitUntilElementVisible(helloSignInLink);
+        driver.findElement(helloSignInLink).click();
+        return new SignInPage(driver);
     }
 }
