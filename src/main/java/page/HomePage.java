@@ -9,7 +9,6 @@ public class HomePage extends BasePage {
     private final By logo = By.id("nav-logo-sprites");
     private final By searchBox = By.id("twotabsearchtextbox");
     private final By searchButton = By.id("nav-search-submit-button");
-
     private final By firstSearchResultName = By.xpath("(//*[text()='Results']/following::a/h2/span)[1]");
     private final By mxPlayerLink = By.xpath("//a[text()='MX Player']");
 
