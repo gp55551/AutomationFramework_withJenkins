@@ -23,10 +23,6 @@ public class BaseTest {
 
     @AfterMethod
     public void after(ITestResult result) {
-        if (!result.isSuccess()) {
-            TakesScreenshot scr = (TakesScreenshot) getDriver();
-            byte imgScr[] = scr.getScreenshotAs(OutputType.BYTES);
-        }
         if (getDriver() != null) {
             getDriver().quit();
         }

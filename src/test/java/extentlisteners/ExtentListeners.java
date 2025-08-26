@@ -22,8 +22,12 @@ public class ExtentListeners implements ITestListener {
     public static ThreadLocal<ExtentTest> testReport = new ThreadLocal<ExtentTest>();
 
     public void onTestStart(ITestResult result) {
-        ExtentTest test = extent.createTest(result.getTestClass().getName()+"     @TestCase : "+result.getMethod().getMethodName());
+        ExtentTest test = extent.createTest(result.getTestClass().getName()+"    " +
+                " @TestCase : "+result.getMethod().getMethodName());
         testReport.set(test);
+    }
+
+    public void addLog(String message) {
     }
 
     public void onTestSuccess(ITestResult result) {
