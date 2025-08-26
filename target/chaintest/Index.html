@@ -19,9 +19,9 @@
         <span class="ms-3 fs-6">Test Framework by Gaurav</span>
       </div>
       <div>
-        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 15s</span>
-        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1"></i> Started 2025-08-25 07:32:54 pm</span>
-        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1"></i> Ended 2025-08-25 07:33:10 pm</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 47s</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1"></i> Started 2025-08-25 07:56:48 pm</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1"></i> Ended 2025-08-25 07:57:36 pm</span>
       </div>
       <div>
           <button role="button" id="sys-info" class="btn btn-outline-primary smaller" title="View System Info">
@@ -48,8 +48,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp1">1</span> Passed,
-                <span id="sf1">0</span> Failed,
+                <span id="sp1">0</span> Passed,
+                <span id="sf1">1</span> Failed,
                 <span id="ss1">0</span> Skipped
               </div>
             </div>
@@ -65,8 +65,8 @@
                 </div>
               </div>
               <div class="card-footer small">
-                <span id="sp2">1</span> Passed,
-                <span id="sf2">0</span> Failed,
+                <span id="sp2">3</span> Passed,
+                <span id="sf2">1</span> Failed,
                 <span id="ss2">0</span> Skipped
               </div>
             </div>
@@ -82,8 +82,8 @@
                   </div>
                 </div>
                 <div class="card-footer small">
-                  <span id="sp3">2</span> Passed,
-                  <span id="sf3">0</span> Failed,
+                  <span id="sp3">5</span> Passed,
+                  <span id="sf3">1</span> Failed,
                   <span id="ss3">0</span> Skipped
                 </div>
               </div>
@@ -112,21 +112,190 @@
         </div>
       </div>
     </div>
-      <div class="test-container passed">
+      <div class="test-container failed">
         <div class="container">
           <div class="row">
             <div class="col-4">
-              <h6 class="mb-3 testname passed">Default Suite</h6>
+              <h6 class="mb-3 testname failed">Regression Test Suite</h6>
               <div class="small">
-                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 15s</span>
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 47s</span>
                 <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
-                  2025-08-25 07:32:55 pm</span>
+                  2025-08-25 07:56:49 pm</span>
                 <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
-                  2025-08-25 07:33:10 pm</span>
+                  2025-08-25 07:57:36 pm</span>
               </div>
               
             </div>
             <div class="col-8">
+                <div class="card mb-1 result failed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+                        <span class="ms-2">test.HomepageTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">10s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf failed">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+          <span class="ms-2">verifyHomePage</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">6s</span>
+        </div>
+      </div>
+      
+        <pre class="py-2 mt-2 mb-4">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: nav-logo-sprites (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\rajde\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49707/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34ca353ca96921ab935759697f7d167e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at page.BasePage.waitUntilElementVisible(BasePage.java:30)
+	at page.HomePage.verifyHomePage(HomePage.java:24)
+	at test.HomepageTest.verifyHomePage(HomepageTest.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre>
+        <div class="mt-3">
+          <pre class="pb-0">
+Opening application....
+verify Amazon Home Page
+Closing application....
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/3cd786c7-9f3b-43c2-8a82-64e1cfb061e3.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
+                <div class="card mb-1 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="ms-2">test.SearchProductTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">7s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf passed">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">searchProductAndVerifyFirstLink</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">2s</span>
+        </div>
+      </div>
+      
+        <div class="mt-3">
+          <pre class="pb-0">
+Opening application....
+search Product And Verify First Link
+Closing application....
+          </pre>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
+                <div class="card mb-1 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="ms-2">test.MxPlayerHomepageTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">16s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf passed">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">verifyMXPlayerHomepage</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">3s</span>
+        </div>
+      </div>
+      
+        <div class="mt-3">
+          <pre class="pb-0">
+Opening application....
+verify MX Player Homepage
+Closing application....
+          </pre>
+        </div>
+    </div>
+    <div class="leaf passed">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="ms-2">verifyLinks</span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">5s</span>
+        </div>
+      </div>
+      
+        <div class="mt-3">
+          <pre class="pb-0">
+Opening application....
+verify MX Player Links
+Closing application....
+          </pre>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
                 <div class="card mb-1 result passed">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
@@ -135,7 +304,7 @@
                         <span class="ms-2">test.SignInPageTest</span>
                       </div>
                       <div>
-                        <span class="badge text-dark bg-light">15s</span>
+                        <span class="badge text-dark bg-light">13s</span>
                       </div>
                     </div>
                     
@@ -147,7 +316,7 @@
           <span class="ms-2">verifySignInPage</span>
         </div>
         <div>
-          <span class="badge text-dark bg-light">1s</span>
+          <span class="badge text-dark bg-light">970ms</span>
         </div>
       </div>
       
@@ -166,7 +335,7 @@ Closing application....
           <span class="ms-2">verifySignInFields</span>
         </div>
         <div>
-          <span class="badge text-dark bg-light">3s</span>
+          <span class="badge text-dark bg-light">1s</span>
         </div>
       </div>
       
@@ -190,22 +359,22 @@ Closing application....
   </div>
 
   <script>
-    const stats1Annotation = {'total': 1, 'passed': 1};
+    const stats1Annotation = {'total': 1, 'passed': 0};
     const stats1 = [
-      { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
-      { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+      { result: 'Passed', count: 0, bg: 'rgb(140, 197, 83)' },
+      { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
       { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
     ];
-      const stats2Annotation = {'total': 1, 'passed': 1};
+      const stats2Annotation = {'total': 4, 'passed': 3};
       const stats2 = [
-        { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 3, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
-      const stats3Annotation = {'total': 2, 'passed': 2};
+      const stats3Annotation = {'total': 6, 'passed': 5};
       const stats3 = [
-        { result: 'Passed', count: 2, bg: 'rgb(140, 197, 83)' },
-        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Passed', count: 5, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 1, bg: 'rgb(233,80,113)' },
         { result: 'Skipped', count: 0, bg: 'rgb(221, 91, 96)' }
       ];
      
@@ -278,14 +447,6 @@ Closing application....
           <table class="table">
             <tbody>
                 <tr>
-                  <td>f</td>
-                  <td>Toggle failed tests</td>
-                </tr>
-                <tr>
-                  <td>p</td>
-                  <td>Toggle passed tests</td>
-                </tr>
-                <tr>
                   <td>s</td>
                   <td>Toggle skipped tests</td>
                 </tr>
@@ -296,6 +457,14 @@ Closing application....
                 <tr>
                   <td>esc</td>
                   <td>Reset all filters</td>
+                </tr>
+                <tr>
+                  <td>f</td>
+                  <td>Toggle failed tests</td>
+                </tr>
+                <tr>
+                  <td>p</td>
+                  <td>Toggle passed tests</td>
                 </tr>
             </tbody>
           </table>
