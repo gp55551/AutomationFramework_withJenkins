@@ -3,6 +3,7 @@ package page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import static util.CommonMethods.*;
 
 public class HomePage extends BasePage {
 
@@ -14,24 +15,20 @@ public class HomePage extends BasePage {
     private final By helloSignInLink = By.xpath("//*[text()='Hello, sign in']");
 
 
-
     public HomePage(WebDriver driver) {
         super(driver);
     }
 
     public HomePage verifyHomePage()
     {
-        waitUntilElementVisible(logo);
-        Assert.assertTrue(driver.findElement(logo).isDisplayed());
+        verifyElementDisplayed(driver, logo);
         return this;
     }
 
     public HomePage searchProduct(String product)
     {
-        waitUntilElementVisible(searchBox);
-        driver.findElement(searchBox).sendKeys(product);
-        waitUntilElementVisible(searchButton);
-        driver.findElement(searchButton).click();
+        sendKeys(driver, searchBox,product);
+        click(driver, searchButton);
         return this;
     }
 
@@ -44,22 +41,19 @@ public class HomePage extends BasePage {
 
     public HomePage verifyMXPlayerLink()
     {
-        waitUntilElementVisible(mxPlayerLink);
-        Assert.assertTrue(driver.findElement(mxPlayerLink).isDisplayed());
+        verifyElementDisplayed(driver, mxPlayerLink);
         return this;
     }
 
     public MXPlayerPage clickMXPlayerLink()
     {
-        waitUntilElementVisible(mxPlayerLink);
-        driver.findElement(mxPlayerLink).click();
+        click(driver, mxPlayerLink);
         return new MXPlayerPage(driver);
     }
 
     public SignInPage clickSignInLink()
     {
-        waitUntilElementVisible(helloSignInLink);
-        driver.findElement(helloSignInLink).click();
+        click(driver,helloSignInLink);
         return new SignInPage(driver);
     }
 }

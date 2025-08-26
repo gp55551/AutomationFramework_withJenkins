@@ -2,7 +2,7 @@ package page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+import static util.CommonMethods.*;
 
 public class SignInPage extends BasePage {
 
@@ -15,16 +15,13 @@ public class SignInPage extends BasePage {
     }
 
     public SignInPage verifySignInHomepage() {
-        waitUntilElementVisible(signInHeader);
-        Assert.assertTrue(driver.findElement(signInHeader).isDisplayed());
+        verifyElementDisplayed(driver, signInHeader);
         return this;
     }
 
     public SignInPage verifyFields() {
-        waitUntilElementVisible(enterEmailField);
-        Assert.assertTrue(driver.findElement(enterEmailField).isDisplayed());
-        waitUntilElementVisible(continueButton);
-        Assert.assertTrue(driver.findElement(continueButton).isDisplayed());
+        verifyElementDisplayed(driver, enterEmailField);
+        verifyElementDisplayed(driver, continueButton);
         return this;
     }
 }

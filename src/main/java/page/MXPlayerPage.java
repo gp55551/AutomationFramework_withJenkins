@@ -3,6 +3,7 @@ package page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import static util.CommonMethods.*;
 
 public class MXPlayerPage extends BasePage {
 
@@ -13,8 +14,7 @@ public class MXPlayerPage extends BasePage {
     }
 
     public MXPlayerPage verifyMXPlayerHomepage() {
-        waitUntilElementVisible(mxPlayerHeader);
-        Assert.assertTrue(driver.findElement(mxPlayerHeader).isDisplayed());
+        verifyElementDisplayed(driver, mxPlayerHeader);
         return this;
     }
 

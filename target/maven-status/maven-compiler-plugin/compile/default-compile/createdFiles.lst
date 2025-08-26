@@ -1,3 +1,4 @@
+page\SignInPage.class
 page\MXPlayerPage.class
 util\driver\DriverFactory.class
 page\HomePage.class
