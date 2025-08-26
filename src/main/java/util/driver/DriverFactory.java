@@ -12,6 +12,7 @@ public class DriverFactory {
         switch (browserName.toLowerCase()) {
             case "chrome-headless":
                 ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--no-sandbox");
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("start-maximized");
                 return new ChromeDriver(chromeOptions);
