@@ -1,6 +1,5 @@
 package test;
 
-import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.testng.annotations.Test;
 import page.HomePage;
 
@@ -11,7 +10,6 @@ public class MxPlayerHomepageTest extends BaseTest {
 
     @Test(priority = 1)
     public void verifyMXPlayerHomepage() {
-        ChainTestListener.log("verify MX Player Homepage");
         HomePage homePage = new HomePage(getDriver());
         homePage.verifyHomePage()
                 .verifyMXPlayerLink()
@@ -21,7 +19,6 @@ public class MxPlayerHomepageTest extends BaseTest {
 
     @Test(priority = 2)
     public void verifyLinks() {
-        ChainTestListener.log("verify MX Player Links");
         HomePage homePage = new HomePage(getDriver());
         homePage.verifyHomePage()
                 .verifyMXPlayerLink()

@@ -1,5 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Regression Test Suite" >
+    <listeners>
+        <listener class-name ="extentlisteners.ExtentListeners"/>
+    </listeners>
+
     <test name="Regression Test">
         <classes>
             <class name="test.HomepageTest" />
