@@ -1,20 +1,20 @@
-# Selenium TestNG Project with ChainTest Reporting
+# Selenium TestNG Project with Extent Reporting
 
-This is a demo project for Selenium Page Object Model with ChainTest reporting.
+This is a demo project for Selenium Page Object Model with Extent reporting.
 
 ### Pre-requisites
 * Java
 * Maven
 * IntelliJ IDEA
-* Chain Test Jar [https://github.com/anshooarora/chaintest]
+* Extent reoport libraries
 
 ### Steps
 1. Clone this project
 2. Open the project in Intellij IDEA
 3. Add Chaintest library, properties file, annotations in tests.
 4. Run through maven with command -> clean test -DXmlFile=TestNG.xml
-5. Find results in target/chaintest/Index.html
+5. Find results in report/Index.html
 
 ### Report -
 
-![img.png](img.png)
+<img width="1898" height="887" alt="image" src="https://github.com/user-attachments/assets/03d6474b-16ac-46eb-8541-dd824cf35185" />
