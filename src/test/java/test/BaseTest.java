@@ -1,10 +1,9 @@
 package test;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import page.BasePage;
+import util.LoggerLoad;
 import util.driver.DriverFactory;
 
 import static util.PropertyFileReader.getProperty;
@@ -17,14 +16,17 @@ public class BaseTest {
     public void before() {
         setDriver(DriverFactory.getNewDriverInstance(getProperty("browser")));
         getDriver().manage().window().maximize();
+        LoggerLoad.info("Stating Application.........");
         getDriver().get(getProperty("application_url"));
         BasePage.clickContinueShopping(getDriver());
+
     }
 
     @AfterMethod
     public void after(ITestResult result) {
         if (getDriver() != null) {
             getDriver().quit();
+            LoggerLoad.info("Closing Application.........");
         }
     }
 }

@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.182 s - in TestSuite
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 69.028 s <<< FAILURE! - in TestSuite
+verifyLinks(test.MxPlayerHomepageTest)  Time elapsed: 3.65 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at test.MxPlayerHomepageTest.verifyLinks(MxPlayerHomepageTest.java:37)
+

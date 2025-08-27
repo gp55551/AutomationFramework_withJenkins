@@ -2,6 +2,7 @@ package test;
 
 import org.testng.annotations.Test;
 import page.HomePage;
+import util.LoggerLoad;
 
 import static page.MXPlayerPage.Link.*;
 import static util.driver.DriverHolder.getDriver;
@@ -10,6 +11,8 @@ public class MxPlayerHomepageTest extends BaseTest {
 
     @Test(priority = 1)
     public void verifyMXPlayerHomepage() {
+        LoggerLoad.info("verify MXPlayer Homepage");
+
         HomePage homePage = new HomePage(getDriver());
         homePage.verifyHomePage()
                 .verifyMXPlayerLink()
@@ -19,6 +22,8 @@ public class MxPlayerHomepageTest extends BaseTest {
 
     @Test(priority = 2)
     public void verifyLinks() {
+        LoggerLoad.info("verify Links");
+
         HomePage homePage = new HomePage(getDriver());
         homePage.verifyHomePage()
                 .verifyMXPlayerLink()
