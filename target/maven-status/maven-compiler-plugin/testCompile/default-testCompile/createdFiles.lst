@@ -3,3 +3,5 @@ test\SearchProductTest.class
 test\HomepageTest.class
 test\SignInPageTest.class
 test\MxPlayerHomepageTest.class
+extentlisteners\ExtentListeners.class
+extentlisteners\ExtentManager.class

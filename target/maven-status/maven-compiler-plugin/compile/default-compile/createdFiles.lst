@@ -1,5 +1,6 @@
 page\SignInPage.class
 page\MXPlayerPage.class
+util\LoggerLoad.class
 util\driver\DriverFactory.class
 page\HomePage.class
 page\BasePage.class

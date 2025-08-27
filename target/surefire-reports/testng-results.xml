@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-27T09:08:35 IST" name="Regression Test Suite" finished-at="2025-08-27T09:09:43 IST" duration-ms="67857">
+  <suite started-at="2025-08-27T09:12:26 IST" name="Regression Test Suite" finished-at="2025-08-27T09:13:31 IST" duration-ms="65514">
     <groups>
     </groups>
-    <test started-at="2025-08-27T09:08:35 IST" name="Regression Test" finished-at="2025-08-27T09:09:43 IST" duration-ms="67857">
+    <test started-at="2025-08-27T09:12:26 IST" name="Regression Test" finished-at="2025-08-27T09:13:31 IST" duration-ms="65514">
       <class name="test.MxPlayerHomepageTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:09:05 IST" name="before" finished-at="2025-08-27T09:09:14 IST" duration-ms="8647" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:12:42 IST" name="before" finished-at="2025-08-27T09:12:51 IST" duration-ms="9220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="verifyMXPlayerHomepage()[pri:1, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:09:14 IST" name="verifyMXPlayerHomepage" finished-at="2025-08-27T09:09:18 IST" duration-ms="3647" status="PASS">
+        <test-method signature="verifyMXPlayerHomepage()[pri:1, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:12:51 IST" name="verifyMXPlayerHomepage" finished-at="2025-08-27T09:12:56 IST" duration-ms="5296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMXPlayerHomepage -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:09:18 IST" name="after" finished-at="2025-08-27T09:09:18 IST" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:12:56 IST" name="after" finished-at="2025-08-27T09:12:57 IST" duration-ms="336" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:09:18 IST" name="before" finished-at="2025-08-27T09:09:25 IST" duration-ms="6468" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:12:57 IST" name="before" finished-at="2025-08-27T09:13:06 IST" duration-ms="8805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="verifyLinks()[pri:2, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:09:25 IST" name="verifyLinks" finished-at="2025-08-27T09:09:28 IST" duration-ms="3229" status="FAIL">
+        <test-method signature="verifyLinks()[pri:2, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:13:06 IST" name="verifyLinks" finished-at="2025-08-27T09:13:12 IST" duration-ms="6088" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -78,7 +78,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLinks -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:09:28 IST" name="after" finished-at="2025-08-27T09:09:29 IST" duration-ms="498" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.MxPlayerHomepageTest@2fb3536e]" started-at="2025-08-27T09:13:12 IST" name="after" finished-at="2025-08-27T09:13:12 IST" duration-ms="318" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -91,15 +91,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
         </test-method> <!-- after -->
       </class> <!-- test.MxPlayerHomepageTest -->
       <class name="test.SearchProductTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.SearchProductTest@20ccf40b]" started-at="2025-08-27T09:08:54 IST" name="before" finished-at="2025-08-27T09:09:02 IST" duration-ms="8228" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.SearchProductTest@20ccf40b]" started-at="2025-08-27T09:12:33 IST" name="before" finished-at="2025-08-27T09:12:40 IST" duration-ms="6487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="searchProductAndVerifyFirstLink()[pri:0, instance:test.SearchProductTest@20ccf40b]" started-at="2025-08-27T09:09:02 IST" name="searchProductAndVerifyFirstLink" finished-at="2025-08-27T09:09:05 IST" duration-ms="3303" status="PASS">
+        <test-method signature="searchProductAndVerifyFirstLink()[pri:0, instance:test.SearchProductTest@20ccf40b]" started-at="2025-08-27T09:12:40 IST" name="searchProductAndVerifyFirstLink" finished-at="2025-08-27T09:12:42 IST" duration-ms="1817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProductAndVerifyFirstLink -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.SearchProductTest@20ccf40b]" started-at="2025-08-27T09:09:05 IST" name="after" finished-at="2025-08-27T09:09:05 IST" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.SearchProductTest@20ccf40b]" started-at="2025-08-27T09:12:42 IST" name="after" finished-at="2025-08-27T09:12:42 IST" duration-ms="198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,15 +112,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
         </test-method> <!-- after -->
       </class> <!-- test.SearchProductTest -->
       <class name="test.HomepageTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.HomepageTest@4d02f94e]" started-at="2025-08-27T09:08:35 IST" name="before" finished-at="2025-08-27T09:08:52 IST" duration-ms="16998" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.HomepageTest@4d02f94e]" started-at="2025-08-27T09:12:26 IST" name="before" finished-at="2025-08-27T09:12:33 IST" duration-ms="7398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="verifyHomePage()[pri:0, instance:test.HomepageTest@4d02f94e]" started-at="2025-08-27T09:08:52 IST" name="verifyHomePage" finished-at="2025-08-27T09:08:53 IST" duration-ms="88" status="PASS">
+        <test-method signature="verifyHomePage()[pri:0, instance:test.HomepageTest@4d02f94e]" started-at="2025-08-27T09:12:33 IST" name="verifyHomePage" finished-at="2025-08-27T09:12:33 IST" duration-ms="104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePage -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.HomepageTest@4d02f94e]" started-at="2025-08-27T09:08:53 IST" name="after" finished-at="2025-08-27T09:08:54 IST" duration-ms="1156" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.HomepageTest@4d02f94e]" started-at="2025-08-27T09:12:33 IST" name="after" finished-at="2025-08-27T09:12:33 IST" duration-ms="262" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,15 +133,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
         </test-method> <!-- after -->
       </class> <!-- test.HomepageTest -->
       <class name="test.SignInPageTest">
-        <test-method is-config="true" signature="before()[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:09:29 IST" name="before" finished-at="2025-08-27T09:09:35 IST" duration-ms="6212" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:13:12 IST" name="before" finished-at="2025-08-27T09:13:21 IST" duration-ms="8810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="verifySignInPage()[pri:1, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:09:35 IST" name="verifySignInPage" finished-at="2025-08-27T09:09:36 IST" duration-ms="955" status="PASS">
+        <test-method signature="verifySignInPage()[pri:1, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:13:21 IST" name="verifySignInPage" finished-at="2025-08-27T09:13:22 IST" duration-ms="1156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInPage -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:09:36 IST" name="after" finished-at="2025-08-27T09:09:36 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:13:22 IST" name="after" finished-at="2025-08-27T09:13:23 IST" duration-ms="364" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,15 +152,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method is-config="true" signature="before()[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:09:36 IST" name="before" finished-at="2025-08-27T09:09:42 IST" duration-ms="6146" status="PASS">
+        <test-method is-config="true" signature="before()[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:13:23 IST" name="before" finished-at="2025-08-27T09:13:30 IST" duration-ms="7054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method signature="verifySignInFields()[pri:2, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:09:42 IST" name="verifySignInFields" finished-at="2025-08-27T09:09:43 IST" duration-ms="873" status="PASS">
+        <test-method signature="verifySignInFields()[pri:2, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:13:30 IST" name="verifySignInFields" finished-at="2025-08-27T09:13:31 IST" duration-ms="1088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInFields -->
-        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:09:43 IST" name="after" finished-at="2025-08-27T09:09:43 IST" duration-ms="332" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestResult)[pri:0, instance:test.SignInPageTest@169e6180]" started-at="2025-08-27T09:13:31 IST" name="after" finished-at="2025-08-27T09:13:31 IST" duration-ms="369" status="PASS">
           <params>
             <param index="0">
               <value>
