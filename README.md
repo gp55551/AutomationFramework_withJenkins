@@ -1,4 +1,4 @@
-# Selenium TestNG Project with Extent Reporting
+# Selenium TestNG Project with jenkins
 
 This is a demo project for Selenium Page Object Model with Extent reporting.
 
