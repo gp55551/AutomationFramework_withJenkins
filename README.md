@@ -26,4 +26,10 @@ This is a demo project for Selenium Page Object Model with Extent reporting.
 
 ### Report -
 
-<img width="1898" height="887" alt="image" src="https://github.com/user-attachments/assets/03d6474b-16ac-46eb-8541-dd824cf35185" />
+<img width="1913" height="958" alt="image" src="https://github.com/user-attachments/assets/871de705-db46-4e5c-8bbd-ae2188ae7501" />
+
+<img width="1892" height="953" alt="image" src="https://github.com/user-attachments/assets/d5518aa8-72ab-4f57-ad6a-9dce9a69f4ca" />
+
+<img width="1883" height="947" alt="image" src="https://github.com/user-attachments/assets/da6db762-1c7a-47b9-8604-12c8e8063c01" />
+
+
